@@ -1714,14 +1714,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1043652741559257567, guid: 1ed0697e357b0104aa237663b119dd58, type: 3}
-      propertyPath: _jumpForce
-      value: 5.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1118537807432298779, guid: 1ed0697e357b0104aa237663b119dd58, type: 3}
-      propertyPath: _sensitivity
-      value: 200
-      objectReference: {fileID: 0}
     - target: {fileID: 1616137777303572474, guid: 1ed0697e357b0104aa237663b119dd58, type: 3}
       propertyPath: m_Name
       value: Player
@@ -1765,14 +1757,6 @@ PrefabInstance:
     - target: {fileID: 1747884146913041277, guid: 1ed0697e357b0104aa237663b119dd58, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6029239351155840786, guid: 1ed0697e357b0104aa237663b119dd58, type: 3}
-      propertyPath: m_Mass
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6029239351155840786, guid: 1ed0697e357b0104aa237663b119dd58, type: 3}
-      propertyPath: m_Constraints
-      value: 112
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

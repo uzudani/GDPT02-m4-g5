@@ -63,6 +63,7 @@ GameObject:
   - component: {fileID: 3460410088286040372}
   - component: {fileID: 6029239351155840786}
   - component: {fileID: 1043652741559257567}
+  - component: {fileID: -8827454397701803663}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -168,7 +169,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1616137777303572474}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 1.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -185,7 +186,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 80
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!114 &1043652741559257567
 MonoBehaviour:
@@ -200,10 +201,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 5
-  _jumpForce: 10
+  _jumpForce: 5.5
   _rotationSpeed: 5
   _maxJumps: 2
   _mass: 1.1
+--- !u!114 &-8827454397701803663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616137777303572474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11e7534842bc18a449787fe8043ef290, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _bulletPrefab: {fileID: 5542639099698346954, guid: 50d565ddd64c9614d8ad03a5beffcce7, type: 3}
+  _shootPoint: {fileID: 1747884146913041277}
+  _fireRate: 0.5
+  _raycastRange: 1000
+  _raycastMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &6612324401970577571
 GameObject:
   m_ObjectHideFlags: 0
@@ -215,7 +235,6 @@ GameObject:
   - component: {fileID: 5300982574782400829}
   - component: {fileID: 2658571645830145908}
   - component: {fileID: 3495527025821582659}
-  - component: {fileID: 6418175613487113958}
   - component: {fileID: 1118537807432298779}
   m_Layer: 0
   m_Name: Looker
@@ -290,27 +309,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &6418175613487113958
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6612324401970577571}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1118537807432298779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -323,7 +321,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e7bca93bcf3cdf46a1ac3209050afd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sensitivity: 100
+  _sensitivity: 350
 --- !u!1 &8185988449194799004
 GameObject:
   m_ObjectHideFlags: 0
